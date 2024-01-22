@@ -142,7 +142,7 @@
           animation: slidein 15s linear infinite;
           white-space: nowrap;
           .logos {
-            width: 100%;
+            width: 63%;
             display: inline-block;
             margin: 0px 0;
             .fa {
@@ -661,3 +661,8 @@
           /* Añade más estilos si lo necesitas, como fuente, peso, etc. */
       }
       
+      
+
+.iconxxx{
+  height: 60px;
+}
