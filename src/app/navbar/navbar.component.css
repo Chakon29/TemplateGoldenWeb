@@ -1,48 +1,47 @@
 .topnav {
-    overflow-x: hidden;
-    margin-left: 8%;
-    margin-right: 8%;
-    overflow-x: hidden;
-  }
-  .logo {
-    font-weight: bolder;
-    color: cornsilk;
-  }
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover {
-    color: var(--primary-color);
-  }
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  .topnav .icon {
-    display: none;
-  }
-  .menu-items {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-  }
-  .sign-in-btn {
-    border: 2px solid black;
-    width: 8rem;
-    border-radius: 2rem;
-  }
-  .sign-up-btn {
-    border: 2px solid #fe4848;
-    width: 9rem;
-    color: #fff;
-    background-color: rgb(248, 79, 1);
-    border-radius: 2rem;
-  }
-  
+  overflow-x: hidden;
+  margin-left: 8%;
+  margin-right: 8%;
+  overflow-x: hidden;
+}
+.logo {
+  font-weight: bolder;
+  color: #fff;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem; font-weight: 600;
+}
+.topnav a:hover {
+  color: var(--primary-color);
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.menu-items {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.sign-in-btn {
+  border: 2px solid black;
+  width: 8rem;
+  border-radius: 1.5rem;
+}
+.sign-up-btn {
+  border: 1px solid var(--main-color);
+  width: 9rem;
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 1.5rem;
+}

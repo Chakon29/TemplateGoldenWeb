@@ -1,0 +1,85 @@
+/* Footer Section */
+.footer-main-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    box-sizing: flex;
+}
+
+.footer-coloum-one-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.footer-one-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-one-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-one-menu a:hover {
+    color: var(--main-color);
+}
+
+.footer-contact i {
+    margin-right: 0.5rem;
+    color: var(--main-color);
+}
+
+.footer-contact span {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.footer-line hr {
+    border: none;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 2rem 0;
+}
+
+.footer-underline-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.footer-credit a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.footer-underline-menu-items a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-underline-menu-items a:hover {
+    color: var(--main-color);
+}
+
+/* Ensure the footer container occupies the full width */
+.footer-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: flex;
+}
