@@ -29,7 +29,7 @@ textarea {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #fe4848;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -40,4 +40,24 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#form-messages {
+    margin-top: 20px;
+}
+
+#form-messages p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#form-messages .success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#form-messages .error {
+    background-color: #f8d7da;
+    color: #721c24;
 }

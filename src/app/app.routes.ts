@@ -1,14 +1,12 @@
 import { Routes } from '@angular/router';
-<<<<<<< Updated upstream
 
-export const routes: Routes = [];
-=======
-import { HeroComponent } from './hero/hero.component'; // Asegúrate de que esta ruta es correcta
+
+import { HeroComponent } from './hero/hero.component'; 
 import { ContactComponent} from './contact/contact.component';
 
 
 export const routes: Routes = [
+  { path: '', component: HeroComponent },
   { path: 'hero', component: HeroComponent },
-  { path: 'contact', component: ContactComponent} // Define la ruta para el HeroComponent
+  { path: 'contact', component: ContactComponent} 
 ];
->>>>>>> Stashed changes
