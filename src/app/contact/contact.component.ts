@@ -18,10 +18,10 @@ export class ContactComponent implements OnInit, AfterViewInit {
   }
 
   initializeFormSubmit() {
-    const form = document.getElementById('contact-form') as HTMLFormElement;
-    const formMessages = document.getElementById('form-messages');
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const formMessages = document.getElementById('form-messages') as HTMLElement | null;
 
-    if (form && formMessages) { // Verificación de nulidad
+    if (form && formMessages) {
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
@@ -39,6 +39,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
           if (response.ok) {
             formMessages.innerHTML = '<p class="success">¡Gracias por tu mensaje! Te responderemos pronto.</p>';
             form.reset();
+            this.hideMessage(formMessages);
           } else {
             formMessages.innerHTML = '<p class="error">Hubo un problema al enviar tu mensaje. Inténtalo de nuevo más tarde.</p>';
           }
@@ -47,5 +48,11 @@ export class ContactComponent implements OnInit, AfterViewInit {
         }
       });
     }
+  }
+
+  hideMessage(element: HTMLElement) {
+    setTimeout(() => {
+      element.classList.add('hidden');
+    }, 3000); // 3 segundos antes de ocultar el mensaje
   }
 }

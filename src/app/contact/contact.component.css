@@ -1,3 +1,12 @@
+.fade-out {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-out.hidden {
+    opacity: 0;
+}
+
 h2 {
     text-align: center;
     margin-top: 20px;
